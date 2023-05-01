@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.history-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.history-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo-image {
+  height: 35px;
+  padding: 5px;
+  padding-left: 0px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #475569;
+  padding-left: 8px;
+}
+
+.domain-url {
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748b;
+  padding-left: 8px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-logo {
+  height: inherit;
+}
+
+@media all and (min-width: 768px) {
+  .history-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  .time {
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .title {
+    margin-bottom: 0px;
+  }
+
+  .domain-url {
+    margin-top: 0px;
+  }
+
+  .history-item {
+    margin-bottom: 10px;
+  }
+
+  .text-container {
+    margin-right: 10px;
+  }
+}
